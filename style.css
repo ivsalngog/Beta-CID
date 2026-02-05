@@ -44,11 +44,6 @@ img {
   width: 800px;
 }
 
-.header img {
-  width: 100%;
-  max-height: 180px;
-  object-fit: contain;
-}
 
 #iBOS {
 	font-size: 14px;
@@ -124,6 +119,7 @@ select{
 	background-color: #e05e12;
 }
 	
+
 
 
 
