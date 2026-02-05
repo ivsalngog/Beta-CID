@@ -1,0 +1,85 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'century gothic'; 
+	font-size: 16px;
+}
+
+body{
+	height: 130vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#iBOS {
+	font-size: 15px;
+}
+
+.FED_header{
+	height:130px;
+	width:436px;
+	border: 3px solid #eeeeee;
+	border-radius: 10px;
+}	
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+.container{
+	width: 500px;
+	padding: 30px;
+	border: 1px solid #eeeeee;
+	border-radius: 10px;
+	background-color: #03001f;
+}
+
+h1{
+	font-weight: bold; 
+	text-decoration: underline;
+	text-decoration-color: white;
+	font-size: 25px; 
+	color: white; 
+	margin-bottom: 15px
+}
+
+label{
+	color: white;
+}
+
+input{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+textarea{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+select{
+	margin-bottom: 10px;
+}
+
+#submit{
+	display: flex;
+	margin: 0 auto; 
+	border: none;
+	background-color: #ff843d;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	width: 200px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+#submit:hover{
+	background-color: #e05e12;
+}
+	
