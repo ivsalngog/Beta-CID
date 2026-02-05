@@ -1,121 +1,149 @@
-*{
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0; 
-	font-size: 16px;
-	font-family: "Outfit"
+/* ===== GLOBAL RESET ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  font-size: 16px;
 }
 
-.outfit-<uniquifier> {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <100>;
-  font-style: normal;
+/* ===== BODY ===== */
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #05061a;
 }
 
-body{
-	height: 130vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+/* ===== FORM CONTAINER ===== */
+.form-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 16px;
+  margin: auto;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  background-color: #03001f;
 }
 
-#iBOS {
-	font-size: 15px;
+/* ===== HEADER IMAGE ===== */
+.FED_header {
+  height: 130px;
+  max-width: 459px;
+  width: 100%;
+  border: 3px solid #eeeeee;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
-.FED_header{
-	width:95%;
-	border: 3px solid #eeeeee;
-	border-radius: 10px;
-}	
+/* ===== TEXT ===== */
+h1 {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: white;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+label {
+  color: white;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+/* ===== INPUTS ===== */
+.form-container input,
+.form-container select,
+.form-container textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
 
 .uppercase {
   text-transform: uppercase;
 }
 
-
-.container{
-	maxwidth: 500px;
-	width: 100px;
-	margin: auto;
-	padding: 30px;
-	border: 1px solid #eeeeee;
-	border-radius: 10px;
-	background-color: #03001f;
+#iBOS {
+  font-size: 15px;
 }
 
-form.row{
-	display:flex;
-	gap:10px;
-	margin-bottom:10px;
+/* ===== GRID SYSTEM ===== */
+.form-row {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 12px;
 }
 
-@media (max-width: 500px) {
-  .form-row {
-    flex-direction: column;
+/* 5-column rows */
+.row-name-5col,
+.row-service-5col {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* Row 1: Rank (1) | Last Name (2) | First Name (2) */
+.row-name-5col input:nth-child(1) {
+  grid-column: span 1;
+}
+.row-name-5col input:nth-child(2) {
+  grid-column: span 2;
+}
+.row-name-5col input:nth-child(3) {
+  grid-column: span 2;
+}
+
+/* Row 2: MI (1) | BOS (1) | FOS (3) */
+.row-service-5col input:nth-child(1) {
+  grid-column: span 1;
+}
+.row-service-5col select:nth-child(2) {
+  grid-column: span 1;
+}
+.row-service-5col input:nth-child(3) {
+  grid-column: span 3;
+}
+
+/* ===== BUTTONS ===== */
+#submit {
+  display: block;
+  margin: 10px auto;
+  border: none;
+  background-color: #ff843d;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  width: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #e05e12;
+}
+
+input[type="reset"] {
+  display: block;
+  margin: 10px auto;
+  border: none;
+  background-color: #1e90ff;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  width: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="reset"]:hover {
+  background-color: #0b6bdc;
+}
+
+/* ===== MOBILE STACKING ===== */
+@media (max-width: 480px) {
+  .row-name-5col,
+  .row-service-5col {
+    grid-template-columns: 1fr;
   }
 }
-
-input,
-select,
-button {
-  width: 100%;
-  padding: 12px;
-  font-size: 1rem;
-}
-
-h1{
-	font-weight: bold; 
-	text-decoration: underline;
-	text-decoration-color: white;
-	font-size: clamp(1.4rem, 4vw, 2rem); 
-	color: white; 
-	margin-bottom: 15px
-}
-
-label{
-	color: white;
-	font-size: clamp(0.9rem, 2.5vw, 1rem);
-}
-
-input{
-	width: 100%;
-	padding: 10px;
-	margin-bottom: 10px;
-}
-
-textarea{
-	width: 100%;
-	padding: 10px;
-	margin-bottom: 10px;
-}
-
-select{
-	margin-bottom: 10px;
-}
-
-#submit{
-	display: flex;
-	margin: 0 auto; 
-	border: none;
-	background-color: #ff843d;
-	font-size: 20px;
-	font-weight: bold;
-	color: white;
-	width: 200px;
-	margin-top: 10px;
-	border-radius: 5px;
-}
-
-#submit:hover{
-	background-color: #e05e12;
-}
-	
-
-
-
-
-
-
-
+			
