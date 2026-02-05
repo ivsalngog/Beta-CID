@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+	<link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+	<style>
+		.sEntry {width: 75px;}
+		.sEntryBOS {width: 70px;}
+		.mEntry {width: 140px;}
+		.mlEntry {width: 214px;}
+		.lEntry {width: 302px;}
+		.lEntry {margin-left: 14px;}
+	</style>
+		
+	<div class = "container">
+		<img class = "FED_header" src = "image.png" alt = "header image" />
+		<h1>REGISTER INSTRUCTOR DETAILS</h1>
+		<form method = "post" action = "" name = "register-form">
+			<input class = "sEntry uppercase" type = "text" name = "iRank" placeholder = "Rank" required>		
+			<input class = "mEntry uppercase" type = "text" name = "iLN" placeholder = "Last Name" required>
+			<input class = "mlEntry uppercase" type = "text" name = "iFN" placeholder = "First Name" required>
+			<input class = "sEntry uppercase" type = "text" name = "iMI" placeholder = "MI" required>
+			<input class = "mEntry uppercase" type = "text" name = "iSN" placeholder = "Serial Number" required>
+			<label for "iBOS">Branch of Service:</label>
+				<select class = "sEntryBOS" name = "iBOS" id = "iBOS" required>
+					<option value = "" disabled selected hidden>Select</option>
+					<optgroup label = "Main Branches">
+						
+						<option value = "PN">PN</option>
+						<option value = "PN(M)">PN(M)</option>
+						<option value = "PAF">PAF</option>
+						<option value  = "PA">PA</option>
+					<optgroup label = "Technical Administrative Service">
+						<option value = "PROF">PROF</option>
+						<option value = "JAGS">JAGS</option>
+						<option value = "MC">MC</option>
+						<option value = "MAC">MAC</option>
+					<optgroup label = "Civilian">
+						<option value = "Civ HR">Civ HR</option>
+						<option value = "Others">Others</option>
+				</select>
+				<p id = "output"></p>
+			<input class = "uppercase" type = "text" name = "iFOS" placeholder = "FOS / RATING" required>
+			<textarea name = "iQual" rows = "7" placeholder = "QUALIFICATIONS" required></textarea>
+			<textarea name = "iSubj" rows = "7" placeholder = "SUBJECTS TAUGHT" required></textarea>
+			<label for "iBadge">Instructor Badge:</label>
+				<select name = "iBadge" id = "iBadge" required>							
+					<option value = "" disabled selected hidden>Select Badge</option>
+					<option value = "None">NONE</option>
+					<option value = "Basic Instructor Badge">Basic Instructor Badge</option>
+					<option value = "Instructor Trainer Badge">Instructor Trainer Badge</option>
+					<option value = "Senior Instructor Badge">Senior Instructor Badge</option>
+					<option value = "Command Instructor Badge">Command Instructor Badge</option>
+				</select> <p>
+			<label for "iCourse">Course Taught:</label>
+				<select class = "lEntry" name = "iCourse" id = "iCourse" required>
+					<option value = "" disabled selected hidden>Select Course</option>
+					<optgroup label = "Instructor Development Courses">
+						<option value = "Instructor Qualification Course">PN Instructor Qualification Course</option>
+						<option value = "Instructor Trainer Qualification Course">PN Instructor Trainer Qualification Course</option>
+					<optgroup label = "Continuing Proficiency Courses">
+						<option value = "Course Director Course">Course Director Course</option>
+						<option value = "Curriculum Development Course">Curriculum Development Course</option>
+					<optgroup label = "Civ HR Courses">
+						<option value = "Civ HR Basic Course">Civ HR Basic Course</option>
+						<option value = "Civ HR Basic Supervisory Course">Civ HR Basic Supervisory Course</option>
+						<option value = "Civ HR Advance Supervisory Course">Civ HR Advance Supervisory Course</option>
+				</select>
+			<input type = "submit" value ="Submit" id = "submit">
+		</form>
+
+	<script src = "script.js"></script>
+</body>
+</html>
+
+			
