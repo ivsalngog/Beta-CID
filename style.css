@@ -47,7 +47,7 @@ button {
 
 .FED_header{
 	height:130px;
-	width:436px;
+	width:100%;
 	border: 3px solid #eeeeee;
 	border-radius: 10px;
 }	
@@ -115,6 +115,7 @@ select{
 	background-color: #e05e12;
 }
 	
+
 
 
 
