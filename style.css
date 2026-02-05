@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-	font-family: 'Outfit'; 
+	font-family: 'century gothic'; 
 	font-size: 16px;
 }
 
@@ -13,36 +13,19 @@
   font-style: normal;
 }
 
-@media (max-width: 768px) {
-  .form-row {
-    flex-direction: column;
-  }
-}
-
-input,
-select,
-button {
-  width: 100%;
-  padding: 12px;
-  font-size: 1rem;
-}
-
 body{
-	margin: 0;
 	height: 130vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-
 #iBOS {
-	font-size: 14px;
+	font-size: 15px;
 }
 
 .FED_header{
-	height:130px;
-	width:436px;
+	width:90%;
 	border: 3px solid #eeeeee;
 	border-radius: 10px;
 }	
@@ -51,11 +34,10 @@ body{
   text-transform: uppercase;
 }
 
+
 .container{
-	max-width:500px;
- 	width:100%;
-  	padding: 30px;
-  	margin: auto;
+	width: 500px;
+	padding: 30px;
 	border: 1px solid #eeeeee;
 	border-radius: 10px;
 	background-color: #03001f;
@@ -65,13 +47,12 @@ h1{
 	font-weight: bold; 
 	text-decoration: underline;
 	text-decoration-color: white;
-	font-size: clamp(1.4rem, 4vw, 2rem);
+	font-size: 25px; 
 	color: white; 
 	margin-bottom: 15px
 }
 
 label{
-	font-size: clamp(0.9rem, 2.5vw, 1rem);
 	color: white;
 }
 
@@ -108,18 +89,3 @@ select{
 	background-color: #e05e12;
 }
 	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
