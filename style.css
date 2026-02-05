@@ -46,7 +46,7 @@ h1{
 	font-weight: bold; 
 	text-decoration: underline;
 	text-decoration-color: white;
-	font-size: 25px; 
+	font-size: 20px; 
 	color: white; 
 	margin-bottom: 15px
 }
@@ -88,5 +88,6 @@ select{
 	background-color: #e05e12;
 }
 	
+
 
 
