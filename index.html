@@ -14,7 +14,6 @@
 		.mEntry {width: 140px;}
 		.mlEntry {width: 214px;}
 		.lEntry {width: 302px;}
-		.lEntry {margin-left: 18px;}
 	</style>
 		
 	<div class = "container">
@@ -27,21 +26,21 @@
 			<input class = "sEntry uppercase" type = "text" name = "iMI" placeholder = "MI" required>
 			<input class = "mEntry uppercase" type = "text" name = "iSN" placeholder = "Serial NR" required>
 			<label for "iBOS">Branch of Service:</label>
-				<select class = "sEntryBOS" name = "iBOS" id = "iBOS" required>
+				<select name = "iBOS" id = "iBOS" required>
 					<option value = "" disabled selected hidden>Select</option>
 					<optgroup label = "Main Branches">
 						
-						<option value = "PN">PN</option>
-						<option value = "PN(M)">PN(M)</option>
-						<option value = "PAF">PAF</option>
-						<option value  = "PA">PA</option>
+						<option value = "PN">PHILIPPINE NAVY</option>
+						<option value = "PN(M)">PHILIPPINE NAVY (M)</option>
+						<option value = "PAF">PHILIPPINE AIR FORCE</option>
+						<option value  = "PA">PHILIPPINE ARMY</option>
 					<optgroup label = "Technical Administrative Service">
-						<option value = "PROF">PROF</option>
-						<option value = "JAGS">JAGS</option>
-						<option value = "MC">MC</option>
-						<option value = "MAC">MAC</option>
+						<option value = "PROF">CORPS OF PROFESSORS</option>
+						<option value = "JAGS">JUDGE ADMINISTRATIVE SERVICE</option>
+						<option value = "MC">MEDICAL CORPS</option>
+						<option value = "MAC">MEDICAL ADMINISTRATIVE CORPS</option>
 					<optgroup label = "Civilian">
-						<option value = "Civ HR">Civ HR</option>
+						<option value = "Civ HR">Civilian HR</option>
 						<option value = "Others">Others</option>
 				</select>
 				<p id = "output"></p>
@@ -80,6 +79,7 @@
 
 
 			
+
 
 
 
