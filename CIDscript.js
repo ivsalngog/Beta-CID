@@ -14,4 +14,5 @@ form.addEventListener('submit', e => {
 	.then(response => alert('Thank you! You have successfully registered the instructor.'))
 	.then(() => { window.location.reload(); })
 	.catch(error => console.error('Error!', error.message))
+
 })
