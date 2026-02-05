@@ -13,12 +13,6 @@
   font-style: normal;
 }
 
-.form-row {
-  display: flex;
-  gap: 12px;
-  margin-bottom: 12px;
-}
-
 @media (max-width: 768px) {
   .form-row {
     flex-direction: column;
@@ -47,7 +41,7 @@ button {
 
 .FED_header{
 	height:130px;
-	width:100%;
+	width:436px;
 	border: 3px solid #eeeeee;
 	border-radius: 10px;
 }	
@@ -115,6 +109,7 @@ select{
 	background-color: #e05e12;
 }
 	
+
 
 
 
