@@ -19,19 +19,20 @@
   }
 }
 
-body{
-	height: 130vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
 input,
 select,
 button {
   width: 100%;
   padding: 12px;
   font-size: 1rem;
+}
+
+body{
+	margin: 0;
+	height: 130vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 
@@ -50,12 +51,10 @@ button {
   text-transform: uppercase;
 }
 
-
 .container{
-
- 	max-width: 900px;
-  	width: 100%;
-  	padding: 16px;
+	max-width:500px;
+ 	width:100%;
+  	padding: 30px;
   	margin: auto;
 	border: 1px solid #eeeeee;
 	border-radius: 10px;
@@ -109,6 +108,7 @@ select{
 	background-color: #e05e12;
 }
 	
+
 
 
 
