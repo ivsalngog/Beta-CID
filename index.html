@@ -8,23 +8,16 @@
 	<link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-	<style>
-		.sEntry {width: 75px;}
-		.sEntryBOS {width: 70px;}
-		.mEntry {width: 140px;}
-		.mlEntry {width: 214px;}
-		.lEntry {width: 302px;}
-	</style>
 		
 	<div class = "container">
 		<img class = "FED_header" src = "image.png" alt = "header image" />
 		<h1>REGISTER INSTRUCTOR DETAILS</h1>
 		<form method = "post" action = "" name = "register-form">
-			<input class = "sEntry uppercase" type = "text" name = "iRank" placeholder = "Rank" required>		
-			<input class = "mEntry uppercase" type = "text" name = "iLN" placeholder = "Last Name" required>
-			<input class = "mlEntry uppercase" type = "text" name = "iFN" placeholder = "First Name" required>
-			<input class = "sEntry uppercase" type = "text" name = "iMI" placeholder = "MI" required>
-			<input class = "mEntry uppercase" type = "text" name = "iSN" placeholder = "Serial NR" required>
+			<input class = "uppercase" type = "text" name = "iRank" placeholder = "Rank" required>		
+			<input class = "uppercase" type = "text" name = "iLN" placeholder = "Last Name" required>
+			<input class = "uppercase" type = "text" name = "iFN" placeholder = "First Name" required>
+			<input class = "uppercase" type = "text" name = "iMI" placeholder = "MI" required>
+			<input class = "uppercase" type = "text" name = "iSN" placeholder = "Serial NR" required>
 			<label for "iBOS">Branch of Service:</label>
 				<select name = "iBOS" id = "iBOS" required>
 					<option value = "" disabled selected hidden>Select</option>
@@ -43,7 +36,6 @@
 						<option value = "Civ HR">Civilian HR</option>
 						<option value = "Others">Others</option>
 				</select>
-				<p id = "output"></p>
 			<input class = "uppercase" type = "text" name = "iFOS" placeholder = "FOS / RATING" required>
 			<textarea name = "iQual" rows = "7" placeholder = "QUALIFICATIONS" required></textarea>
 			<textarea name = "iSubj" rows = "7" placeholder = "SUBJECTS TAUGHT" required></textarea>
@@ -55,9 +47,9 @@
 					<option value = "Instructor Trainer Badge">Instructor Trainer Badge</option>
 					<option value = "Senior Instructor Badge">Senior Instructor Badge</option>
 					<option value = "Command Instructor Badge">Command Instructor Badge</option>
-				</select> <p>
+				</select> 
 			<label for "iCourse">Course Taught:</label>
-				<select class = "lEntry" name = "iCourse" id = "iCourse" required>
+				<select name = "iCourse" id = "iCourse" required>
 					<option value = "" disabled selected hidden>Select Course</option>
 					<optgroup label = "Instructor Development Courses">
 						<option value = "Instructor Qualification Course">PN Instructor Qualification Course</option>
@@ -79,6 +71,7 @@
 
 
 			
+
 
 
 
