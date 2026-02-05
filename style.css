@@ -6,6 +6,13 @@
 	font-size: 16px;
 }
 
+.outfit-<uniquifier> {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 body{
 	height: 130vh;
 	display: flex;
@@ -83,5 +90,6 @@ select{
 	background-color: #e05e12;
 }
 	
+
 
 
